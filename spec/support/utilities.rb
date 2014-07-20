@@ -1,8 +1,4 @@
-def full_title(page_title)
-  base_title = "Ruby on Rails Tutorial Sample App"
-  if page_title.empty?
-    base_title
-  else
-    "#{base_title} | #{page_title}"
-  end
-end
+include ApplicationHelper
+#ks rspec works without this include too 
+# & run all 4 tests from application_helpers_spec.rb anyway
+
